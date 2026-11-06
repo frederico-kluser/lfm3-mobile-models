@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "release": "models-lfm3-suite-v1",
-  "generated_at": "2026-11-06T04:46:53.878517Z",
+  "generated_at": "2026-11-06T06:28:53.983797Z",
   "repository": "frederico-kluser/lfm3-mobile-models",
   "upstream": "https://huggingface.co/LiquidAI",
   "license": "LFM Open License v1.0",
@@ -366,58 +366,58 @@
       ]
     },
     {
-      "id": "d1-2b-onnx-q4f16",
-      "label": "d1-2B-ONNX · q4f16 (todas as primitivas)",
+      "id": "d1-2b-onnx-q4",
+      "label": "d1-2B-ONNX · q4 + visão q8 (todas as primitivas)",
       "family": "lfm3",
       "kind": "onnx",
-      "local_dir": "models/d1-2b-onnx-q4f16",
-      "main": "decoder_q4f16.onnx",
+      "local_dir": "models/d1-2b-onnx-q4",
+      "main": "decoder_q4.onnx",
       "mmproj": null,
-      "vision_encoder": "vision_encoder_fp16.onnx",
+      "vision_encoder": "vision_encoder_q8.onnx",
       "audio_encoder": null,
       "tokenizer": "tokenizer.json",
       "processor_config": "processor_config.json",
-      "total_bytes": 1964800609,
+      "total_bytes": 1956370411,
       "min_free_ram_mb": 2400,
       "min_free_disk_mb": 2250,
       "tier": 3,
       "capabilities": {
         "vision": true,
-        "video": true,
+        "video": false,
         "audio": false,
         "thinking": false,
         "tools": false
       },
       "license": "LFM Open License v1.0",
-      "notes": "Contrato completo (prompt.py/slots.py/pointer.py). O decoder tem 7 inputs e devolve logits [slots,128000] + hidden_states [1,seq,2048].",
+      "notes": "Contrato completo (prompt.py/slots.py/pointer.py). O decoder tem 7 inputs e devolve logits [slots,128000] + hidden_states [1,seq,2048]. q4 evita o kernel int8 do q4f16; q8 reduz o vision encoder.",
       "files": [
         {
-          "filename": "decoder_q4f16.onnx",
+          "filename": "decoder_q4.onnx",
           "role": "decoder",
-          "bytes": 274492,
-          "sha256": "3ac6c50361b1f262b4bf1ac250459eee49bde2620f704b1785fa355cc68117ab",
-          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/decoder_q4f16.onnx"
+          "bytes": 358945,
+          "sha256": "00b77894a36d92c0d455db07f39743c0fa814f5855aa060b75b8dace1654065f",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/decoder_q4.onnx"
         },
         {
-          "filename": "decoder_q4f16.onnx_data",
+          "filename": "decoder_q4.onnx_data",
           "role": "decoderData",
-          "bytes": 1567474688,
-          "sha256": "977616f1fcc543490a49c7e54aec98a6398566c7868e3adf0134688a9b701426",
-          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/decoder_q4f16.onnx_data"
+          "bytes": 1741806592,
+          "sha256": "e72031f1b00e3273e286b4125d1b58c20b59c7e031bd791796277e0fab65b14b",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/decoder_q4.onnx_data"
         },
         {
-          "filename": "vision_encoder_fp16.onnx",
+          "filename": "vision_encoder_q8.onnx",
           "role": "visionEncoder",
-          "bytes": 104940,
-          "sha256": "d6f3ed9a9211feb09d146fb8d550517a7b779940d081eb1604127bfe23ca2e6a",
-          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/vision_encoder_fp16.onnx"
+          "bytes": 126353,
+          "sha256": "ea9421f2a7fa8bc401bee96b1077be522b8d448e82e46c9117f2bc90eb01caac",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/vision_encoder_q8.onnx"
         },
         {
-          "filename": "vision_encoder_fp16.onnx_data",
+          "filename": "vision_encoder_q8.onnx_data",
           "role": "sidecar",
-          "bytes": 379021312,
-          "sha256": "ca65da8ca1d95481f71cc669266284f5be64046df1c7d53e8ca51cf3f4643a05",
-          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/vision_encoder_fp16.onnx_data"
+          "bytes": 196153344,
+          "sha256": "baff3c8cf1dd0b4d8dd3108850558a7f26fafb55367be7bcf98d02739c162d1d",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/vision_encoder_q8.onnx_data"
         },
         {
           "filename": "tokenizer.json",
