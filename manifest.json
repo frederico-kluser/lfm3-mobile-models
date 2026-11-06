@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "release": "models-lfm3-suite-v1",
-  "generated_at": "2026-11-06T04:20:37.164176Z",
+  "generated_at": "2026-11-06T04:46:53.878517Z",
   "repository": "frederico-kluser/lfm3-mobile-models",
   "upstream": "https://huggingface.co/LiquidAI",
   "license": "LFM Open License v1.0",
