@@ -4,6 +4,9 @@ Artefactos verificados por SHA-256 para a app [offline-ai-mobile](https://github
 
 ## Incluído
 - `manifest.json` — 11 bundles, tamanhos, SHA-256 e origem oficial.
+- `d1-2B-ONNX` usa `decoder_q4 + vision_encoder_q8` (validado no iOS
+  Simulator); o `decoder_q4f16` oficial crasha no kernel MLAS int8 do
+  simulador.
 - `SHA256SUMS.txt` — somas de todos os ficheiros conhecidos + licença.
 - `LICENSE` — LFM Open License v1.0 (10 574 B; SHA-256 `4d28ca14…0068c`).
 - `README.md` — tabela de artefactos, verificação e limitações.
