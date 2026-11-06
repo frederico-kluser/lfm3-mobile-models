@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "release": "models-lfm3-suite-v1",
-  "generated_at": "2026-11-06T07:05:33.754121Z",
+  "generated_at": "2026-11-06T07:12:05.914875Z",
   "repository": "frederico-kluser/lfm3-mobile-models",
   "upstream": "https://huggingface.co/LiquidAI",
   "license": "LFM Open License v1.0",
@@ -383,7 +383,7 @@
       "tier": 3,
       "capabilities": {
         "vision": true,
-        "video": false,
+        "video": true,
         "audio": false,
         "thinking": false,
         "tools": false
@@ -467,7 +467,7 @@
       "tier": 3,
       "capabilities": {
         "vision": true,
-        "video": false,
+        "video": true,
         "audio": true,
         "thinking": false,
         "tools": false
