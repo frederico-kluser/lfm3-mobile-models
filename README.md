@@ -37,11 +37,11 @@ Artefactos **verificados por SHA-256** da família
 | `d1-omni-2b-q8_0` | `d1-Omni-2B-Q8_0.gguf` | `mmproj-d1-Omni-2B-Q8_0.gguf` | 2,17 GB |
 | `d1-omni-600m-legacy-q8_0` | `d1-omni-600M-Q8_0.gguf` | `mmproj-d1-omni-600M-Q8_0.gguf` | 0,67 GB |
 | `d1-2b-onnx-q4` | `decoder_q4.onnx` (+ `.onnx_data`) | `vision_encoder_q8.onnx` (+ `.onnx_data`) | 1,96 GB |
-| `d1-omni-2b-onnx-q4f16` | `decoder_q4f16.onnx` (+ `.onnx_data`) | `vision_encoder_fp16.onnx`, `audio_encoder_fp16.onnx` (+ `.onnx_data`) | 2,45 GB |
+| `d1-omni-2b-onnx-q4` | `decoder_q4.onnx` (+ `.onnx_data`) | `vision_encoder_q8.onnx`, `audio_encoder_fp16.onnx` (+ `.onnx_data`) | 2,21 GB |
 
 Os GGUF e os `mmproj` oficiais são anexados com o **nome original**. Os
 subgrafos ONNX com nomes repetidos entre bundles são anexados com prefixo
-(`d1-2b-onnx-q4_…`, `d1-omni-2b-onnx-q4f16_…`) para não colidirem; a app
+(`d1-2b-onnx-q4_…`, `d1-omni-2b-onnx-q4_…`) para não colidirem; a app
 descarrega os ONNX diretamente do Hugging Face e usa o release para os GGUF.
 O `decoder_q4f16` oficial crasha no kernel MLAS int8 do iOS Simulator; o
 `decoder_q4` (1,74 GB) é o caminho validado.
@@ -107,3 +107,4 @@ O script:
 - <https://huggingface.co/LiquidAI/d1-2B-ONNX>
 - <https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX>
 - <https://github.com/ggml-org/llama.cpp/releases/tag/b12088>
+
