@@ -10,6 +10,12 @@ Artefactos **verificados por SHA-256** da família
 - **Somas:** [`SHA256SUMS.txt`](SHA256SUMS.txt)
 - **Licença dos pesos:** [`LICENSE`](LICENSE) — **LFM Open License v1.0**
 
+> **Estado do release:** o release publica o manifesto, as somas SHA-256 e a
+> licença. Os pesos completos são servidos pelo Hugging Face oficial (a app
+> usa-os como fallback) e podem ser espelhados no GitHub com
+> `tools/publish_lfm3_release.sh` numa ligação com banda suficiente — o total
+> da suíte é ~13 GB e o GitHub limita cada ativo a 2 GiB.
+
 > **Licença (importante):** o código da app é MIT, mas os pesos LFM3/d1 estão
 > sob a LFM Open License v1.0. É Apache-2.0-like, com patentes, mas o §5 limita
 > o uso comercial a organizações cujo grupo tenha receita anual **inferior a
