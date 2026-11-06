@@ -1,0 +1,4 @@
+staging/
+*.part
+.DS_Store
+staging/.tmp-*

@@ -1,0 +1,551 @@
+{
+  "schema": 1,
+  "release": "models-lfm3-suite-v1",
+  "generated_at": "2026-11-06T04:20:37.164176Z",
+  "repository": "frederico-kluser/lfm3-mobile-models",
+  "upstream": "https://huggingface.co/LiquidAI",
+  "license": "LFM Open License v1.0",
+  "license_file": "LICENSE",
+  "license_sha256": "4d28ca14dedc0b3d0fcc2b3339f0e79931faa33874f3d24f522183a8fc70068c",
+  "bundles": [
+    {
+      "id": "lfm3-1.7b-q4_0",
+      "label": "LFM3-1.7B · QAD-Q4_0 (essencial)",
+      "family": "lfm3",
+      "kind": "gguf",
+      "local_dir": "models/lfm3-1.7b-q4_0",
+      "main": "LFM3-1.7B-QAD-Q4_0.gguf",
+      "mmproj": null,
+      "vision_encoder": null,
+      "audio_encoder": null,
+      "tokenizer": null,
+      "processor_config": null,
+      "total_bytes": 1049615680,
+      "min_free_ram_mb": 1350,
+      "min_free_disk_mb": 1100,
+      "tier": 1,
+      "capabilities": {
+        "vision": false,
+        "video": false,
+        "audio": false,
+        "thinking": true,
+        "tools": true
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "QAD = Quantization-Aware Distillation; receita de agente temp 0.1 · top_k 50 · top_p 1.0 · min_p 0 · repeat 1.1.",
+      "files": [
+        {
+          "filename": "LFM3-1.7B-QAD-Q4_0.gguf",
+          "role": "weights",
+          "bytes": 1049615680,
+          "sha256": "43a7d09a0e9cba91b63eb7052488b9564569bddfd65754d2e426465e572a7452",
+          "source": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/resolve/main/LFM3-1.7B-QAD-Q4_0.gguf"
+        }
+      ]
+    },
+    {
+      "id": "lfm3-1.7b-q4_k_m",
+      "label": "LFM3-1.7B · Q4_K_M (qualidade+)",
+      "family": "lfm3",
+      "kind": "gguf",
+      "local_dir": "models/lfm3-1.7b-q4_k_m",
+      "main": "LFM3-1.7B-Q4_K_M.gguf",
+      "mmproj": null,
+      "vision_encoder": null,
+      "audio_encoder": null,
+      "tokenizer": null,
+      "processor_config": null,
+      "total_bytes": 1099627808,
+      "min_free_ram_mb": 1400,
+      "min_free_disk_mb": 1150,
+      "tier": 1,
+      "capabilities": {
+        "vision": false,
+        "video": false,
+        "audio": false,
+        "thinking": true,
+        "tools": true
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "",
+      "files": [
+        {
+          "filename": "LFM3-1.7B-Q4_K_M.gguf",
+          "role": "weights",
+          "bytes": 1099627808,
+          "sha256": "3793e1e6e2266919d6e015287221b41100175a98eddaba92e111aed3b05c93c4",
+          "source": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/resolve/main/LFM3-1.7B-Q4_K_M.gguf"
+        }
+      ]
+    },
+    {
+      "id": "lfm3-1.7b-q8_0",
+      "label": "LFM3-1.7B · Q8_0 (máxima qualidade)",
+      "family": "lfm3",
+      "kind": "gguf",
+      "local_dir": "models/lfm3-1.7b-q8_0",
+      "main": "LFM3-1.7B-Q8_0.gguf",
+      "mmproj": null,
+      "vision_encoder": null,
+      "audio_encoder": null,
+      "tokenizer": null,
+      "processor_config": null,
+      "total_bytes": 1846238496,
+      "min_free_ram_mb": 2400,
+      "min_free_disk_mb": 1900,
+      "tier": 3,
+      "capabilities": {
+        "vision": false,
+        "video": false,
+        "audio": false,
+        "thinking": true,
+        "tools": true
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "",
+      "files": [
+        {
+          "filename": "LFM3-1.7B-Q8_0.gguf",
+          "role": "weights",
+          "bytes": 1846238496,
+          "sha256": "8f6b24182258205e9e01e21f1f24a1f208c1e8115578825d202ce39976af20b6",
+          "source": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/resolve/main/LFM3-1.7B-Q8_0.gguf"
+        }
+      ]
+    },
+    {
+      "id": "lfm3-vl-2b-q4_k_m",
+      "label": "LFM3-VL-2B · Q4_K_M + mmproj Q8_0",
+      "family": "lfm3",
+      "kind": "gguf",
+      "local_dir": "models/lfm3-vl-2b-q4_k_m",
+      "main": "LFM3-VL-2B-Q4_K_M.gguf",
+      "mmproj": "mmproj-LFM3-VL-2B-Q8_0.gguf",
+      "vision_encoder": null,
+      "audio_encoder": null,
+      "tokenizer": null,
+      "processor_config": null,
+      "total_bytes": 1302659680,
+      "min_free_ram_mb": 1900,
+      "min_free_disk_mb": 1400,
+      "tier": 2,
+      "capabilities": {
+        "vision": true,
+        "video": true,
+        "audio": false,
+        "thinking": true,
+        "tools": true
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "Projetor lfm3vl; o template de vídeo agrupa pares de frames e antecipa cada par com <X.X seconds>.",
+      "files": [
+        {
+          "filename": "LFM3-VL-2B-Q4_K_M.gguf",
+          "role": "weights",
+          "bytes": 1099627808,
+          "sha256": "56dac2e192ff0d9ab8507f4f1aeb4aed0463449bbbefaac79497f041c95f21eb",
+          "source": "https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF/resolve/main/LFM3-VL-2B-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-LFM3-VL-2B-Q8_0.gguf",
+          "role": "mmproj",
+          "bytes": 203031872,
+          "sha256": "c5c5b58d544a18da919172d2d0368090ea1a4a351b6feb7f8a326a264a5918ab",
+          "source": "https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF/resolve/main/mmproj-LFM3-VL-2B-Q8_0.gguf"
+        }
+      ]
+    },
+    {
+      "id": "lfm3-audio-2b-q4_k_m",
+      "label": "LFM3-Audio-2B · Q4_K_M + mmproj Q8_0",
+      "family": "lfm3",
+      "kind": "gguf",
+      "local_dir": "models/lfm3-audio-2b-q4_k_m",
+      "main": "LFM3-Audio-2B-Q4_K_M.gguf",
+      "mmproj": "mmproj-LFM3-Audio-2B-Q8_0.gguf",
+      "vision_encoder": null,
+      "audio_encoder": null,
+      "tokenizer": null,
+      "processor_config": null,
+      "total_bytes": 1403437856,
+      "min_free_ram_mb": 2100,
+      "min_free_disk_mb": 1500,
+      "tier": 2,
+      "capabilities": {
+        "vision": false,
+        "video": false,
+        "audio": true,
+        "thinking": false,
+        "tools": true
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "Entrada 16 kHz mono; saída LiquidCodec 24 kHz. Projetor lfm3a.",
+      "files": [
+        {
+          "filename": "LFM3-Audio-2B-Q4_K_M.gguf",
+          "role": "weights",
+          "bytes": 1099626016,
+          "sha256": "9a773289bd321ed879cd3a76545f6aca506e403851a45fb315420aee45625be2",
+          "source": "https://huggingface.co/LiquidAI/LFM3-Audio-2B-GGUF/resolve/main/LFM3-Audio-2B-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-LFM3-Audio-2B-Q8_0.gguf",
+          "role": "mmproj",
+          "bytes": 303811840,
+          "sha256": "2b6648b1fd48af16aa0877b0592b144d15070783673e038a379fdbc51d40e365",
+          "source": "https://huggingface.co/LiquidAI/LFM3-Audio-2B-GGUF/resolve/main/mmproj-LFM3-Audio-2B-Q8_0.gguf"
+        }
+      ]
+    },
+    {
+      "id": "lfm3-omni-2b-q4_k_m",
+      "label": "LFM3-Omni-2B · Q4_K_M + mmproj Q4_K_M",
+      "family": "lfm3",
+      "kind": "gguf",
+      "local_dir": "models/lfm3-omni-2b-q4_k_m",
+      "main": "LFM3-Omni-2B-Q4_K_M.gguf",
+      "mmproj": "mmproj-LFM3-Omni-2B-Q4_K_M.gguf",
+      "vision_encoder": null,
+      "audio_encoder": null,
+      "tokenizer": null,
+      "processor_config": null,
+      "total_bytes": 1391216800,
+      "min_free_ram_mb": 2050,
+      "min_free_disk_mb": 1500,
+      "tier": 2,
+      "capabilities": {
+        "vision": true,
+        "video": true,
+        "audio": true,
+        "thinking": false,
+        "tools": true
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "Template MTMD_VIDEO_TEMPLATE_LFM3_OMNI: intercala o segmento da banda sonora após cada par de frames.",
+      "files": [
+        {
+          "filename": "LFM3-Omni-2B-Q4_K_M.gguf",
+          "role": "weights",
+          "bytes": 1099630080,
+          "sha256": "9f8d30e9d4fd7a9349d586e077988229b3ca0a0e4ad730897563d1eccc9893e2",
+          "source": "https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF/resolve/main/LFM3-Omni-2B-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-LFM3-Omni-2B-Q4_K_M.gguf",
+          "role": "mmproj",
+          "bytes": 291586720,
+          "sha256": "0a746c0794782a16d4456b230c2a0b5888a2d94a6677211edbed7d7a4177a39a",
+          "source": "https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF/resolve/main/mmproj-LFM3-Omni-2B-Q4_K_M.gguf"
+        }
+      ]
+    },
+    {
+      "id": "d1-2b-q4_k_m",
+      "label": "d1-2B · Q4_K_M + mmproj Q8_0 (System One)",
+      "family": "lfm3",
+      "kind": "gguf",
+      "local_dir": "models/d1-2b-q4_k_m",
+      "main": "d1-2B-Q4_K_M.gguf",
+      "mmproj": "mmproj-d1-2B-Q8_0.gguf",
+      "vision_encoder": null,
+      "audio_encoder": null,
+      "tokenizer": null,
+      "processor_config": null,
+      "total_bytes": 1302661472,
+      "min_free_ram_mb": 1450,
+      "min_free_disk_mb": 1350,
+      "tier": 2,
+      "capabilities": {
+        "vision": true,
+        "video": true,
+        "audio": false,
+        "thinking": false,
+        "tools": false
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "O /v1/systemone só aceita noul/choice/score; para spans/range/box usa o bundle ONNX. Issue #31150 (router+concorrência) continua aberto.",
+      "files": [
+        {
+          "filename": "d1-2B-Q4_K_M.gguf",
+          "role": "weights",
+          "bytes": 1099629888,
+          "sha256": "adca5789ad30ae6027e8e936749bb9f19673097492ab26fa1c5b69643ca50b4b",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-GGUF/resolve/main/d1-2B-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-d1-2B-Q8_0.gguf",
+          "role": "mmproj",
+          "bytes": 203031584,
+          "sha256": "62cc6d74fd1e5b1d6b48518566bf4c0cfd2468079a0c096ea323b74eed01e0d1",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-GGUF/resolve/main/mmproj-d1-2B-Q8_0.gguf"
+        }
+      ]
+    },
+    {
+      "id": "d1-omni-2b-q8_0",
+      "label": "d1-Omni-2B · Q8_0 + mmproj Q8_0",
+      "family": "lfm3",
+      "kind": "gguf",
+      "local_dir": "models/d1-omni-2b-q8_0",
+      "main": "d1-Omni-2B-Q8_0.gguf",
+      "mmproj": "mmproj-d1-Omni-2B-Q8_0.gguf",
+      "vision_encoder": null,
+      "audio_encoder": null,
+      "tokenizer": null,
+      "processor_config": null,
+      "total_bytes": 2172345280,
+      "min_free_ram_mb": 2600,
+      "min_free_disk_mb": 2250,
+      "tier": 3,
+      "capabilities": {
+        "vision": true,
+        "video": true,
+        "audio": true,
+        "thinking": false,
+        "tools": false
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "A via GGUF do d1-Omni ainda não expõe as primitivas tipadas; usa d1-Omni-2B-ONNX para o contrato completo.",
+      "files": [
+        {
+          "filename": "d1-Omni-2B-Q8_0.gguf",
+          "role": "weights",
+          "bytes": 1846241184,
+          "sha256": "aedf1a7c341b4281979423dbc39e9c3d3ad1da8834156c8e75af5399ca3b0861",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-GGUF/resolve/main/d1-Omni-2B-Q8_0.gguf"
+        },
+        {
+          "filename": "mmproj-d1-Omni-2B-Q8_0.gguf",
+          "role": "mmproj",
+          "bytes": 326104096,
+          "sha256": "31778160ac0ec70f9b59f296aa1c8e70cbd1eb7e3a3ff873d695aaa4c7b8d674",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-GGUF/resolve/main/mmproj-d1-Omni-2B-Q8_0.gguf"
+        }
+      ]
+    },
+    {
+      "id": "d1-omni-600m-legacy-q8_0",
+      "label": "d1-omni-600M · Q8_0 (legado LFM2)",
+      "family": "lfm2Legacy",
+      "kind": "gguf",
+      "local_dir": "models/d1-omni-600m-legacy-q8_0",
+      "main": "d1-omni-600M-Q8_0.gguf",
+      "mmproj": "mmproj-d1-omni-600M-Q8_0.gguf",
+      "vision_encoder": null,
+      "audio_encoder": null,
+      "tokenizer": null,
+      "processor_config": null,
+      "total_bytes": 669998816,
+      "min_free_ram_mb": 1100,
+      "min_free_disk_mb": 700,
+      "tier": 1,
+      "capabilities": {
+        "vision": true,
+        "video": true,
+        "audio": true,
+        "thinking": false,
+        "tools": false
+      },
+      "license": "LFM Open License v1.0 (modelo LFM2 legado)",
+      "notes": "Não emparelhar com a suíte LFM3; serve apenas de fallback de baixa RAM.",
+      "files": [
+        {
+          "filename": "d1-omni-600M-Q8_0.gguf",
+          "role": "weights",
+          "bytes": 407207584,
+          "sha256": "cd94463f4cac9c700ec6750df8df005bb6846de410e159d1f5e985e1171693d3",
+          "source": "https://huggingface.co/LiquidAI/d1-omni-600M-GGUF/resolve/main/d1-omni-600M-Q8_0.gguf"
+        },
+        {
+          "filename": "mmproj-d1-omni-600M-Q8_0.gguf",
+          "role": "mmproj",
+          "bytes": 262791232,
+          "sha256": "df887978550cdbb45f0f57d7b436a0f844689f9f561395a144ced500606c3a89",
+          "source": "https://huggingface.co/LiquidAI/d1-omni-600M-GGUF/resolve/main/mmproj-d1-omni-600M-Q8_0.gguf"
+        }
+      ]
+    },
+    {
+      "id": "d1-2b-onnx-q4f16",
+      "label": "d1-2B-ONNX · q4f16 (todas as primitivas)",
+      "family": "lfm3",
+      "kind": "onnx",
+      "local_dir": "models/d1-2b-onnx-q4f16",
+      "main": "decoder_q4f16.onnx",
+      "mmproj": null,
+      "vision_encoder": "vision_encoder_fp16.onnx",
+      "audio_encoder": null,
+      "tokenizer": "tokenizer.json",
+      "processor_config": "processor_config.json",
+      "total_bytes": 1964800609,
+      "min_free_ram_mb": 2400,
+      "min_free_disk_mb": 2250,
+      "tier": 3,
+      "capabilities": {
+        "vision": true,
+        "video": true,
+        "audio": false,
+        "thinking": false,
+        "tools": false
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "Contrato completo (prompt.py/slots.py/pointer.py). O decoder tem 7 inputs e devolve logits [slots,128000] + hidden_states [1,seq,2048].",
+      "files": [
+        {
+          "filename": "decoder_q4f16.onnx",
+          "role": "decoder",
+          "bytes": 274492,
+          "sha256": "3ac6c50361b1f262b4bf1ac250459eee49bde2620f704b1785fa355cc68117ab",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/decoder_q4f16.onnx"
+        },
+        {
+          "filename": "decoder_q4f16.onnx_data",
+          "role": "decoderData",
+          "bytes": 1567474688,
+          "sha256": "977616f1fcc543490a49c7e54aec98a6398566c7868e3adf0134688a9b701426",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/decoder_q4f16.onnx_data"
+        },
+        {
+          "filename": "vision_encoder_fp16.onnx",
+          "role": "visionEncoder",
+          "bytes": 104940,
+          "sha256": "d6f3ed9a9211feb09d146fb8d550517a7b779940d081eb1604127bfe23ca2e6a",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/vision_encoder_fp16.onnx"
+        },
+        {
+          "filename": "vision_encoder_fp16.onnx_data",
+          "role": "sidecar",
+          "bytes": 379021312,
+          "sha256": "ca65da8ca1d95481f71cc669266284f5be64046df1c7d53e8ca51cf3f4643a05",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/onnx/vision_encoder_fp16.onnx_data"
+        },
+        {
+          "filename": "tokenizer.json",
+          "role": "tokenizer",
+          "bytes": 17908258,
+          "sha256": "a39eed58008cbcbc09e5b629b81338a654269c64cd13348aaa6090f4db75c7e7",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/tokenizer.json"
+        },
+        {
+          "filename": "processor_config.json",
+          "role": "processorConfig",
+          "bytes": 1254,
+          "sha256": "37396ef3370083a04381ef25f9e1b50dec184b8cdcf08cf718feb8944ad8f3bc",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/processor_config.json"
+        },
+        {
+          "filename": "chat_template.jinja",
+          "role": "chatTemplate",
+          "bytes": 12762,
+          "sha256": "17f33d44f7bd01aa94623dd8bf8e4e0ef80580a725ef8b71dc6b78f6bcc11700",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/chat_template.jinja"
+        },
+        {
+          "filename": "config.json",
+          "role": "config",
+          "bytes": 2903,
+          "sha256": "ffdc4c996152d23dbe8a2659a8c6aabe2992aa3fa3a41601dd0fca8771d6f332",
+          "source": "https://huggingface.co/LiquidAI/d1-2B-ONNX/resolve/main/config.json"
+        }
+      ]
+    },
+    {
+      "id": "d1-omni-2b-onnx-q4f16",
+      "label": "d1-Omni-2B-ONNX · q4f16 (áudio + voz)",
+      "family": "lfm3",
+      "kind": "onnx",
+      "local_dir": "models/d1-omni-2b-onnx-q4f16",
+      "main": "decoder_q4f16.onnx",
+      "mmproj": null,
+      "vision_encoder": "vision_encoder_fp16.onnx",
+      "audio_encoder": "audio_encoder_fp16.onnx",
+      "tokenizer": "tokenizer.json",
+      "processor_config": "processor_config.json",
+      "total_bytes": 2220143346,
+      "min_free_ram_mb": 2650,
+      "min_free_disk_mb": 2500,
+      "tier": 3,
+      "capabilities": {
+        "vision": true,
+        "video": true,
+        "audio": true,
+        "thinking": false,
+        "tools": false
+      },
+      "license": "LFM Open License v1.0",
+      "notes": "O decoder tem 8 inputs (audio_features [num_audio_tokens,2048]); o audio_encoder exige log-mel [1,128,frames] a 16 kHz. chat_template/config ainda sem SHA-256 publicado.",
+      "files": [
+        {
+          "filename": "decoder_q4f16.onnx",
+          "role": "decoder",
+          "bytes": 276444,
+          "sha256": "59bed92a6ec5df6462aa02ad8ac5be342afecfa8525539852a9a5deb48d7f221",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/onnx/decoder_q4f16.onnx"
+        },
+        {
+          "filename": "decoder_q4f16.onnx_data",
+          "role": "decoderData",
+          "bytes": 1567474688,
+          "sha256": "bf8a038340291e07e6864243016eae55e9c183523d446fca608b5d82acceed1f",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/onnx/decoder_q4f16.onnx_data"
+        },
+        {
+          "filename": "vision_encoder_fp16.onnx",
+          "role": "visionEncoder",
+          "bytes": 104940,
+          "sha256": "bad561d7f73e25a6df537bdb52cb1bddacaf607d807a44d62513c4d37c9f17a1",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/onnx/vision_encoder_fp16.onnx"
+        },
+        {
+          "filename": "vision_encoder_fp16.onnx_data",
+          "role": "sidecar",
+          "bytes": 379021312,
+          "sha256": "bdb6d246785a13c39e24a486d07510f2c02285c43c83cf52535b30c1ca8b403d",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/onnx/vision_encoder_fp16.onnx_data"
+        },
+        {
+          "filename": "audio_encoder_fp16.onnx",
+          "role": "audioEncoder",
+          "bytes": 163115,
+          "sha256": "20a7c84d1f3b5ca39e6f1903b9482ec68bc16a841b637d4684b72c679036110e",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/onnx/audio_encoder_fp16.onnx"
+        },
+        {
+          "filename": "audio_encoder_fp16.onnx_data",
+          "role": "sidecar",
+          "bytes": 255173120,
+          "sha256": "d7d67ea09bda583fe346097af9f06ba03c92e47870e475f1c65604677581b878",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/onnx/audio_encoder_fp16.onnx_data"
+        },
+        {
+          "filename": "tokenizer.json",
+          "role": "tokenizer",
+          "bytes": 17908634,
+          "sha256": "41927bd314d17d7d7fadb44e10cd0919f7b71528d7741596d8cbd15c6945ec44",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/tokenizer.json"
+        },
+        {
+          "filename": "processor_config.json",
+          "role": "processorConfig",
+          "bytes": 1928,
+          "sha256": "2288d34b7c0579593258b1c083de4ab8328a842fdb0190977363e573dbdcd0e5",
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/processor_config.json"
+        },
+        {
+          "filename": "chat_template.jinja",
+          "role": "chatTemplate",
+          "bytes": 13363,
+          "sha256": null,
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/chat_template.jinja"
+        },
+        {
+          "filename": "config.json",
+          "role": "config",
+          "bytes": 5802,
+          "sha256": null,
+          "source": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX/resolve/main/config.json"
+        }
+      ]
+    }
+  ]
+}
